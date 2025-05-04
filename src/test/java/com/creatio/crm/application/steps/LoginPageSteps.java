@@ -13,11 +13,19 @@ public class LoginPageSteps extends LoginPageEelements {
 	{
 		PageFactory.initElements(diver, this);
 	}
-	public void launchTheApplication()
+	public void launchTheApplication(String isValidUser)
 	{
 		LaunchTheAplication();
+		if(isValidUser.equalsIgnoreCase("valid"))
+		{
 		Assert.assertEquals(getTitle(), prop.getProperty("title"));
 		log("pass", "Application is launched and Title is matching");
+		}
+		else
+		{
+			Assert.assertEquals(getTitle(), prop.getProperty("titl"));
+			log("pass", "Application is launched and Title is matching");
+		}
 	}
 	
 	public void verifyLoginHeader()

@@ -66,6 +66,7 @@ public class Webcommons {
 	public void doubleClick(WebElement element) {
 		Actions action = new Actions(driver);
 		action.doubleClick(element).perform();
+		
 	}
 
 	// method to enter values in to textBox

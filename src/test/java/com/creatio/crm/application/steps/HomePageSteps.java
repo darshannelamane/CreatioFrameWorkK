@@ -23,9 +23,9 @@ public class HomePageSteps extends HomePageElements {
 	
 	public void verifySinginSuccessfull()
 	{
-		waitForElement(homepageHeaderSignin, 30);
+		waitForElement(homepageHeaderSignin, 20);
 		Assert.assertTrue(isElementDisplayed(homepageHeaderSignin));
-		log("pass", "Sign in successfull for existing account");
+		log("pass", "Sign in successfull for existing account with valid user");
 	}
 	
 }

@@ -5,19 +5,17 @@
   <listeners>
     <listener class-name="com.creatio.crm.framework.listeners.Itestlistenner"/>
   </listeners>
-  <test thread-count="5" name="qdw.xml(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.creatio.crm.application.tests.AplicationTest">
         <methods>
           <include name="setupbrowser"/>
-          <include name="verifySignupPageWhenCountrySelectedBySelectClass"/>
-          <include name="verufySignupforNewuserAccount" invocation-numbers="0"/>
           <include name="SetupReport"/>
           <include name="tearDownBrowser"/>
-          <include name="verifySigninPage"/>
+          <include name="verifySigninPage" invocation-numbers="0 1"/>
           <include name="initializeWeDriverdetails"/>
         </methods>
       </class> <!-- com.creatio.crm.application.tests.AplicationTest -->
     </classes>
-  </test> <!-- qdw.xml(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -37,7 +37,7 @@ public class BasePage extends Reports{
 	}
 
 	// to Teardown browser
-	@AfterMethod
+   @AfterMethod
 	public void tearDownBrowser() {
 		driver.quit();
 	}

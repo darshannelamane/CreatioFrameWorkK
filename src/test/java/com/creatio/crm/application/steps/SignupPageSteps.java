@@ -30,7 +30,7 @@ public class SignupPageSteps extends SignupPageElements {
 	}
 
 	public void verifyCreateAccountpageiSdisplayedAfterClickedonSingup() {
-		waitForElement(createAccountHeaderInSignupClick, 12);
+		waitForElement(createAccountHeaderInSignupClick, 5);
 		Assert.assertTrue(isElementDisplayed(createAccountHeaderInSignupClick));
 		log("pass", "CreateaccountPageIsDisplayed");
 	}
@@ -71,7 +71,7 @@ public class SignupPageSteps extends SignupPageElements {
 	    String actual3= getElementText(companyLableText);
 	    String expect4= prop.getProperty("company");
 	    Assert.assertEquals(actual3, expect4);
-	    log("pass", "Compane lable is displayed correctlty");
+	    log("pass", "Company lable is displayed correctlty");
 	    
 	    String actual5= getElementText(websiteLableText);
 	    String expect6= prop.getProperty("website");
@@ -109,7 +109,7 @@ public class SignupPageSteps extends SignupPageElements {
 		    wait(6);
 		    click(phoneTextBox);
 		    wait(3);
-		    enterText(phoneTextBox, "90"+uniqueId("ddMMhhmm"));
+		    textEnter(phoneTextBox, "90"+uniqueId("ddMMhhmm"));
 		    log("info", "Entered all the company details");
 		   	}
 	
@@ -121,8 +121,8 @@ public class SignupPageSteps extends SignupPageElements {
 		    enterText(companyTextBox, data.get(0).get("company"));
 		    enterText(websiteTextBox, data.get(0).get("website"));
 		    selectOPtion(phoneDropDown,"visibletext","India");
-		    wait(3);
-		    enterText(phoneTextBox, "90"+uniqueId("ddMMhhmm"));
+		    wait(3); 
+		    textEnter(phoneTextBox, "90"+uniqueId("ddMMhhmm"));
 		    textEnter(countryTxtbox, data.get(0).get("country"));
 		    waitForElement(countryindiaOption, 5);
 		    click(countryindiaOption);

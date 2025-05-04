@@ -11,37 +11,37 @@ public class SignupPageElements extends Webcommons {
 	@FindBy(xpath="//span[text()=' SIGN UP ']")
 	public WebElement signUpbtnInLoginPage;
 
-	@FindBy(xpath="//div[@plerdy-tracking-id='94262047701']")
+	@FindBy(xpath="//div[text()='Have an account?']")
 	public WebElement createAccountHeaderInSignupClick;
 	
-	@FindBy(xpath="//input[@plerdy-tracking-id='91655236301']")
+	@FindBy(xpath="//input[@aria-label='Business email']")
 	 public WebElement businessEmailTxtBox;
 	
-	@FindBy(xpath="//input[@plerdy-tracking-id='87825914101']")
+	@FindBy(xpath="//input[@aria-label='Password']")
 	 public WebElement passwordTextbox;
 	
-	@FindBy(xpath="//span[@plerdy-tracking-id='60824679301']")
+	@FindBy(xpath="//span[text()=' CONTINUE ']")
 	 public WebElement contiuebtn;
 	
-	@FindBy(xpath="//div[@plerdy-tracking-id='94262047702']")
+	@FindBy(xpath="//div[@class='second-registration-step-container ng-star-inserted']//div[text()='Create a free account']")
 	 public WebElement createAccountHeaderClickOnContinue;
 	
 	@FindBy(xpath="//label[text()='First name']")
 	 public WebElement FirstNameLableText;
 	
-	@FindBy(xpath="//input[@plerdy-tracking-id='64092108301']")
+	@FindBy(xpath="//input[@aria-label='First name']")
 	 public WebElement FirstNameTextBox;
 	
 	@FindBy(xpath="//label[text()='Last name']")
 	 public WebElement lastNameLableText;
 	
-	@FindBy(xpath="//input[@plerdy-tracking-id='52671715501']")
+	@FindBy(xpath="//input[@aria-label='Last name']")
 	 public WebElement lastNameTextBox;
 	
 	@FindBy(xpath="//label[text()='Company']")
 	 public WebElement companyLableText;
 	
-	@FindBy(xpath="//input[@plerdy-tracking-id='26264823901']")
+	@FindBy(xpath="//input[@aria-label='Company']")
 	 public WebElement companyTextBox;
 	
 	@FindBy(xpath="//label[text()='Website']")
@@ -56,28 +56,28 @@ public class SignupPageElements extends Webcommons {
 	@FindBy(xpath="//li[@plerdy-tracking-id='30695080901']")
 	public WebElement usoption;
 	
-	@FindBy(xpath="//span[@plerdy-tracking-id='64655880201']")
+	@FindBy(xpath="//span[text()='India']")
 	 public WebElement countryindiaOption;
 	
 	@FindBy(xpath="//label[text()='Phone ']")
 	 public WebElement phonelableText;
 	
-	@FindBy(xpath="//div[@class='mat-form-field-infix ng-tns-c81281293-8']")
+	@FindBy(xpath="//input[@aria-label='Phone']")
 	 public WebElement phoneTextBox;
 	
-	@FindBy(xpath="//div[@plerdy-tracking-id='55504819501']")
+	@FindBy(xpath="//div[@class='iti__selected-flag']")
 	 public WebElement phoneDropDown;
 	
 	@FindBy(xpath="//span[text()='India (भारत)']")
 	 public WebElement phoneOption;
 	
-	@FindBy(xpath="//input[@plerdy-tracking-id='15167237101']")
+	@FindBy(xpath="//input[@aria-label='Website']")
 	 public WebElement websiteTextBox;
 	
 	@FindBy(xpath="//span[@class='back-button-icon ng-star-inserted']")
 	 public WebElement backbtn;
 	
-	@FindBy(xpath="//button[@plerdy-tracking-id='25529559701']")
+	@FindBy(xpath="//span[text()=' SIGN UP ']")
 	 public WebElement signupbtnCreateaccountpage;
 	
 	
