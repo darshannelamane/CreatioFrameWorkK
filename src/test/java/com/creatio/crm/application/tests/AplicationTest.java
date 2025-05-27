@@ -6,35 +6,36 @@ import org.testng.annotations.Test;
 
 public class AplicationTest extends BaseTest {
 
-//	 (priority = 1)
-//	public void VerifyCookieHeaderisDisplayed() {
-//		loginpage.LaunchTheAplication();
-//		cookiepage.verifyCookiesPopUpisDisplayed();
-//
-//	}
-//
-//	(priority = 2, dataProvider = "testdata")
-//	public void verifyCookieContentDisplayed(String expectedcontent) {
-//		loginpage.LaunchTheAplication();
-//		cookiepage.verifyCookiesPopUpisDisplayed();
-//		cookiepage.verifyCookieContentDisplayed(expectedcontent);
-//	}
-//
-//	  (priority = 3)
-//	public void verifyCookiepopupbtnDisplayed() {
-//		loginpage.LaunchTheAplication();
-//		cookiepage.verifyCookiesPopUpisDisplayed();
-//		cookiepage.verifyCookiesPopUpSelectionButtons();
-//	}
-//
-//	  (priority = 4)
-//	public void creatioLogoCookieBotLogoDisplayed() {
-//		loginpage.LaunchTheAplication();
-//		cookiepage.verifyCookiesPopUpisDisplayed();
-//		cookiepage.CreatioLogoinCookiePopUp();
-//		cookiepage.verifycookieBotlogo();
-//
-//	}
+	 @Test (priority = 1)
+	public void VerifyCookieHeaderisDisplayed() {
+		loginpage.LaunchTheAplication();
+		cookiepage.verifyCookiesPopUpisDisplayed();
+
+	}
+
+	@Test (priority = 2, dataProvider = "testdata")
+	public void verifyCookieContentDisplayed(String expectedcontent) {
+		loginpage.LaunchTheAplication();
+		cookiepage.verifyCookiesPopUpisDisplayed();
+		cookiepage.verifyCookieContentDisplayed(expectedcontent);
+	}
+
+	@Test (priority = 3)
+	public void verifyCookiepopupbtnDisplayed() {
+		loginpage.LaunchTheAplication();
+		cookiepage.verifyCookiesPopUpisDisplayed();
+		cookiepage.verifyCookiesPopUpSelectionButtons();
+	}
+
+	  @Test (priority = 4)
+	public void creatioLogoCookieBotLogoDisplayed() {
+		loginpage.LaunchTheAplication();
+		cookiepage.verifyCookiesPopUpisDisplayed();
+		cookiepage.CreatioLogoinCookiePopUp();
+		cookiepage.verifycookieBotlogo();
+	  }
+  }
+
 //
 //	 @Test (priority = 5)
 //	public void verifyswitchbuttonsDisplayed() {
@@ -53,7 +54,7 @@ public class AplicationTest extends BaseTest {
 //
 //	}
 //
-//	  (priority = 7)
+//	 @Test (priority = 7)
 //	public void clickonAllowSelectionverifyCookiepageDisappear() {
 //		loginpage.LaunchTheAplication();
 //		cookiepage.verifyCookiesPopUpisDisplayed();
@@ -62,7 +63,7 @@ public class AplicationTest extends BaseTest {
 //
 //	}
 //
-//	 (priority = 8)
+//	 @Test(priority = 8)
 //	public void clickonDeneyCookiepageDisappear() {
 //		loginpage.LaunchTheAplication();
 //		cookiepage.verifyCookiesPopUpisDisplayed();
@@ -70,7 +71,8 @@ public class AplicationTest extends BaseTest {
 //		cookiepage.verifyCookiesPopUpIsClosed();
 //
 //	}
-//
+//}
+
 //	  (priority = 9)
 //	public void verifyNeccesarybuttonisDisable() {
 //		loginpage.LaunchTheAplication();
@@ -125,29 +127,29 @@ public class AplicationTest extends BaseTest {
 //	}
 //}
 
-	 @Test (priority = 13, dataProvider = "testdata")
-	 public void verifySigninPage(String mail, String paswrd, String isValidUser) {
-		loginpage.launchTheApplication("isValidUser");
-		cookiepage.verifyCookiesPopUpisDisplayed();
-		cookiepage.selectTheCookiesOption("allow all");
-		loginpage.verifyLoginHeader();
-		loginpage.verifyBusinessEmailPasswordUiText();
-		loginpage.verifyloginbtnIsDisplayedAndText();
-		loginpage.enterCredential(mail, paswrd);
-		loginpage.clickLogibtn();
+//	 @Test (priority = 13, dataProvider = "testdata")
+//	 public void verifySigninPage(String mail, String paswrd, String isValidUser) {
+//		loginpage.launchTheApplication("isValidUser");
+//		cookiepage.verifyCookiesPopUpisDisplayed();
+//		cookiepage.selectTheCookiesOption("allow all");
+//		loginpage.verifyLoginHeader();
+//		loginpage.verifyBusinessEmailPasswordUiText();
+//		loginpage.verifyloginbtnIsDisplayedAndText();
+//		loginpage.enterCredential(mail, paswrd);
+//		loginpage.clickLogibtn();
+//
+//		boolean flag = false;
+//
+//		if (isValidUser.equalsIgnoreCase("valid")) {
+//			flag = true;
+//		}
+//
+//		if (flag) {
+//			homepage.verifySinginSuccessfull();
+//		} else {
+//			loginpage.verifyerrorMessageForInvalidUser();
+//		}
+//
+//	}
 
-		boolean flag = false;
 
-		if (isValidUser.equalsIgnoreCase("valid")) {
-			flag = true;
-		}
-
-		if (flag) {
-			homepage.verifySinginSuccessfull();
-		} else {
-			loginpage.verifyerrorMessageForInvalidUser();
-		}
-
-	}
-
-}
