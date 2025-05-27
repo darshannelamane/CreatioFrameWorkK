@@ -12,7 +12,7 @@
           <include name="setupbrowser"/>
           <include name="SetupReport"/>
           <include name="tearDownBrowser"/>
-          <include name="verifySigninPage" invocation-numbers="0 1"/>
+          <include name="verifyCookieContentDisplayed" invocation-numbers="0"/>
           <include name="initializeWeDriverdetails"/>
         </methods>
       </class> <!-- com.creatio.crm.application.tests.AplicationTest -->

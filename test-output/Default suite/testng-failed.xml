@@ -6,9 +6,12 @@
       <class name="com.creatio.crm.application.tests.AplicationTest">
         <methods>
           <include name="setupbrowser"/>
-          <include name="verufySignupforNewuserAccount"/>
+          <include name="verifyCookiepopupbtnDisplayed"/>
+          <include name="VerifyCookieHeaderisDisplayed"/>
           <include name="SetupReport"/>
           <include name="tearDownBrowser"/>
+          <include name="creatioLogoCookieBotLogoDisplayed"/>
+          <include name="verifyCookieContentDisplayed"/>
           <include name="initializeWeDriverdetails"/>
         </methods>
       </class> <!-- com.creatio.crm.application.tests.AplicationTest -->

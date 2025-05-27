@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.creatio.crm.application.tests.AplicationTest" class="method navigator-link" hash-for-method="verifyCookieContentDisplayed(We may use cookies and similar technologies to collect information about the ways you interact with ...)">verifyCookieContentDisplayed(We may use cookies and similar technologies to collect information about the ways you interact with ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +118,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.creatio.crm.application.tests.AplicationTest" class="method navigator-link" hash-for-method="verifySigninPage(BharathTechAcademy162345182754@gmail.com, ABCD123#, invalid)">verifySigninPage(BharathTechAcademy162345182754@gmail.com, ABCD123#, invalid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.creatio.crm.application.tests.AplicationTest" class="method navigator-link" hash-for-method="VerifyCookieHeaderisDisplayed">VerifyCookieHeaderisDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.creatio.crm.application.tests.AplicationTest" class="method navigator-link" hash-for-method="verifySigninPage(BharathTechAcademy13@outlook.com, BharathTechAcademy@123, valid)">verifySigninPage(BharathTechAcademy13@outlook.com, BharathTechAcademy@123, valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.creatio.crm.application.tests.AplicationTest" class="method navigator-link" hash-for-method="creatioLogoCookieBotLogoDisplayed">creatioLogoCookieBotLogoDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.creatio.crm.application.tests.AplicationTest" class="method navigator-link" hash-for-method="verifyCookiepopupbtnDisplayed">verifyCookiepopupbtnDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -124,6 +143,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.creatio.crm.application.tests.AplicationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCookieContentDisplayed(We may use cookies and similar technologies to collect information about the ways you interact with ...)">
+                  </a> <!-- verifyCookieContentDisplayed(We may use cookies and similar technologies to collect information about the ways you interact with ...) -->
+                  <span class="method-name">verifyCookieContentDisplayed</span>
+                  <span class="parameters">(We may use cookies and similar technologies to collect information about the ways you interact with and use the website, to support and enhance features and functionality, to monitor performance, to personalize content and experiences, for marketing and analytics, and for other lawful purposes. We also may share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. Please, see more details on the "About" tab )</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [We may use cookies and similar technologies to collect information about the ways you interact with and use the website, to support and enhance features and functionality, to monitor performance, to personalize content and experiences, for marketing and analytics, and for other lawful purposes. We also may share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. Please, see more details on the &quot;About&quot; tab  the &quot;About&quot; tab ] but found [We may use cookies and similar technologies to collect information about the ways you interact with and use the website, to support and enhance features and functionality, to monitor performance, to personalize content and experiences, for marketing and analytics, and for other lawful purposes. We also may share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. Please, see more details on the &quot;About&quot; tab ]
+	at com.creatio.crm.application.steps.CookiesPageSteps.verifyCookieContentDisplayed(CookiesPageSteps.java:30)
+	at com.creatio.crm.application.tests.AplicationTest.verifyCookieContentDisplayed(AplicationTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,18 +173,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySigninPage(BharathTechAcademy162345182754@gmail.com, ABCD123#, invalid)">
-                  </a> <!-- verifySigninPage(BharathTechAcademy162345182754@gmail.com, ABCD123#, invalid) -->
-                  <span class="method-name">verifySigninPage</span>
-                  <span class="parameters">(BharathTechAcademy162345182754@gmail.com, ABCD123#, invalid)</span>
+                  <a name="VerifyCookieHeaderisDisplayed">
+                  </a> <!-- VerifyCookieHeaderisDisplayed -->
+                  <span class="method-name">VerifyCookieHeaderisDisplayed</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySigninPage(BharathTechAcademy13@outlook.com, BharathTechAcademy@123, valid)">
-                  </a> <!-- verifySigninPage(BharathTechAcademy13@outlook.com, BharathTechAcademy@123, valid) -->
-                  <span class="method-name">verifySigninPage</span>
-                  <span class="parameters">(BharathTechAcademy13@outlook.com, BharathTechAcademy@123, valid)</span>
+                  <a name="creatioLogoCookieBotLogoDisplayed">
+                  </a> <!-- creatioLogoCookieBotLogoDisplayed -->
+                  <span class="method-name">creatioLogoCookieBotLogoDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCookiepopupbtnDisplayed">
+                  </a> <!-- verifyCookiepopupbtnDisplayed -->
+                  <span class="method-name">verifyCookiepopupbtnDisplayed</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,20 +250,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySigninPage')
+data.setCell(0, 1, 'creatioLogoCookieBotLogoDisplayed')
 data.setCell(0, 2, 'com.creatio.crm.application.tests.AplicationTest')
-data.setCell(0, 3, 14022);
+data.setCell(0, 3, 3721);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySigninPage')
+data.setCell(1, 1, 'verifyCookiepopupbtnDisplayed')
 data.setCell(1, 2, 'com.creatio.crm.application.tests.AplicationTest')
-data.setCell(1, 3, 5437);
+data.setCell(1, 3, 2870);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyCookieContentDisplayed')
+data.setCell(2, 2, 'com.creatio.crm.application.tests.AplicationTest')
+data.setCell(2, 3, 2502);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyCookieHeaderisDisplayed')
+data.setCell(3, 2, 'com.creatio.crm.application.tests.AplicationTest')
+data.setCell(3, 3, 2467);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,35 +304,69 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setupbrowser(Chrome)</span>
-                <span class="method-start">759 ms</span>
+                <span class="method-start">152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializeWeDriverdetails</span>
-                <span class="method-start">2216 ms</span>
+                <span class="method-start">3800 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifySigninPage(BharathTechAcademy13@outlook.com, BharathTechAcademy@123, valid)</span>
-                <span class="method-start">2285 ms</span>
+                <span class="method-name">VerifyCookieHeaderisDisplayed</span>
+                <span class="method-start">3837 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownBrowser</span>
-                <span class="method-start">16649 ms</span>
+                <span class="method-start">6602 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setupbrowser(Chrome)</span>
-                <span class="method-start">16909 ms</span>
+                <span class="method-start">7406 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializeWeDriverdetails</span>
-                <span class="method-start">18043 ms</span>
+                <span class="method-start">8416 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifySigninPage(BharathTechAcademy162345182754@gmail.com, ABCD123#, invalid)</span>
-                <span class="method-start">18049 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCookieContentDisplayed(We may use cookies and similar technologies to collect information about the ways you interact with ...)</span>
+                <span class="method-start">8418 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownBrowser</span>
-                <span class="method-start">23531 ms</span>
+                <span class="method-start">11195 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupbrowser(Chrome)</span>
+                <span class="method-start">11362 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeWeDriverdetails</span>
+                <span class="method-start">12436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCookiepopupbtnDisplayed</span>
+                <span class="method-start">12452 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownBrowser</span>
+                <span class="method-start">15358 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupbrowser(Chrome)</span>
+                <span class="method-start">15516 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeWeDriverdetails</span>
+                <span class="method-start">16563 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">creatioLogoCookieBotLogoDisplayed</span>
+                <span class="method-start">16583 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownBrowser</span>
+                <span class="method-start">20346 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
